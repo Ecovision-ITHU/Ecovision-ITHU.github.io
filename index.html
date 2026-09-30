@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #000;
+    }
+
+    video {
+      display: block;
+      width: min(960px, 100%);
+      max-height: calc(100vh - 48px);
+      border-radius: 16px;
+      box-shadow: 0 0 32px rgb(255 255 255 / 22%);
+    }
+  </style>
+</head>
+<body>
+  <video controls loop preload="metadata">
+    <source src="pan que se cae con musica epica de fondo.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+  </video>
+</body>
+</html>
